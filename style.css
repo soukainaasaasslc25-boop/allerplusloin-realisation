@@ -1,7 +1,7 @@
 
 :root {
   --rouge-principal: #c07c07;          
-  --rouge-fonce:      #e6b877;;         
+  --rouge-fonce:      #e6b877;         
   --or:              #f59e0b;        
   --verre:           rgba(255,255,255,0.13);   
   --bordure-verre:   rgba(255,255,255,0.25);
@@ -265,7 +265,7 @@ main {
 /* Corps de la modal */
 .modal__body { padding: 36px; }
 
-.modal__images {
+/* .modal__images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
@@ -278,6 +278,42 @@ main {
   cover;
   border-radius: 24px;
   border: 3px solid var(--bordure-verre);
+} */
+ .modal__images {
+  display: flex;
+  gap: 10px;
+  margin: 12px 0 18px;
+  perspective: 1200px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.modal__images img {
+  width: calc(33.33% - 7px);
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  transition: transform .45s cubic-bezier(.15,.85,.25,1.2),
+              box-shadow .45s,
+              border-radius .45s,
+              object-position .35s,
+              filter .35s;
+  object-position: center;
+  scroll-snap-align: start;
+  backface-visibility: hidden;
+  position: relative;
+}
+
+.modal__images img:hover {
+  transform: scale(1.12) translateY(-8px) rotateX(4deg);
+  object-position: center top;
+  border-radius: 15px;
+  box-shadow: 0 22px 42px rgba(0,0,0,0.28);
+  filter: brightness(1.07);
+  z-index: 10;
 }
 
 /* Infos détaillées */

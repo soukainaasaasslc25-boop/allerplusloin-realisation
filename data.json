@@ -22,7 +22,7 @@
     "region": "imperiales",
     "regionMaroc": "centre",
     "description": "Capitale du Maroc, mélange d'histoire et de modernité.",
-    "images": ["images/rabat/borg.jpg", "images/rabat/mosquer.jpg", "images/rabat/hassan2.jpg"],
+    "images": ["images/rabat/mosquer.jpg", "images/rabat/borg.jpg", "images/rabat/hassan2.jpg"],
     "landmarks": "Tour Hassan, Kasbah des Oudayas, Mausolée Mohammed V",
     "history": "Ville impériale et capitale administrative du Maroc.",
     "popularity": 88,
