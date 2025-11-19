@@ -194,4 +194,5 @@ function applyFilters() {
 
 
 // Écouteurs de recherche et filtre
-searchInput.addEventListener('input', applyFilters);                
+searchInput.addEventListener('input', applyFilters);    
+regionSelect.addEventListener('change',applyFilters);           
